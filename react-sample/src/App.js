@@ -6,7 +6,6 @@ import Article from './Article';
 import Section from './Section';
 
 function App() {
-  const h1 = '야구게임 방식';
   const sections = ['사용되는 숫자는 0에서 9까지 서로 다른 숫자이다.',
                     '숫자는 맞지만 위치가 틀렸을 때는 볼.',
                     '숫자와 위치가 전부 맞으면 스트라이크.',

@@ -3,6 +3,7 @@ import './App.css';
 import styles from './App.module.css';
 import Header from './Header';
 import Nav from './Nav';
+import { useState } from 'react';
 
 // 이때 첫글자는 반드시 대문자
 // 이게 react의 component 생성
@@ -54,11 +55,22 @@ import Nav from './Nav';
 // }
 
 function App() {
-  const list = ['HTML', 'CSS', 'JavaScript'];
+  // const list = ['HTML', 'CSS', 'JavaScript'];
+  const [list, setList] = useState(['HTML','CSS','JavaScript']);
+  const [hide, setHide] = useState(false);
 
   return (
     <div className="App">
-      <Header title='Web' desc='World Wide Web!!'></Header>
+      {/* 0402 버튼을 누를때마다 랜덤한 값 리스트에 추가 */}
+      <button onClick={() => {
+        setHide(!hide);
+      }}>숨기기</button>
+      {hide?
+        null
+       :<Header title='Web' desc='World Wide Web!!'></Header>
+        }
+
+
       <Nav list={list}></Nav>
 
       {/* / author에 객체를 전달하기 위해 {{}} 형태로 전달 */}
