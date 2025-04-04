@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 function Header(props) {
-  console.log('header');
+  // console.log('header');
   const [count, setCount] = useState(0);
   const [show, setShow] = useState(false);
   // const [content, setContent] = useContent('');

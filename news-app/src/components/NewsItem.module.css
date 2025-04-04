@@ -1,0 +1,33 @@
+.block {
+  display: flex;
+}
+
+.block+.block {
+  margin-top: 3rem;
+}
+
+.thumbnail {
+  margin-right: 1rem;
+}
+
+.thumbnail img {
+  display: block;
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.block .contents h2 {
+  margin: 0;
+}
+
+.block .contents h2 a {
+  color: black;
+}
+
+.block .contents h2 p {
+  margin: 0;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  white-space: normal;
+}

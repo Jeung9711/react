@@ -1,0 +1,12 @@
+.control {
+  display: inline-block;
+  width: 5em; height: 5em;
+  border: 2px solid black;
+  border-radius: 0.5em;
+}
+
+.control + .control {
+  margin-left: 0.5em;
+}
+
+img { width: 3em; }

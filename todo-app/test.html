@@ -1,0 +1,24 @@
+<body>
+  
+</body>
+<script>
+  const age = 30;
+  if(age < 30) {
+    if(age < 20) {
+      console.log("미성년");
+    } else {
+      console.log("30 미만");
+    }
+  } else {
+    console.log("30 이상");
+  }
+
+  console.log( age < 30 ? '30미만' : '30이상');
+  console.log( 
+    age < 30 ?   
+      (age < 20 ? 
+        '미성년' 
+        : '30미만') 
+      : '30이상'
+  );
+</script>
