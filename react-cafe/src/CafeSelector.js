@@ -1,6 +1,14 @@
-function CafeSelector() {
+function CafeSelector({ selectCafe, setSelectCafe }) {
     return(
-        <div></div>
+        <div>
+            {CafeSelector.map((cafe)=>{
+                <img
+                    key={cafe.name}
+                    src={cafe.logo}
+                    alt={cafe.name}
+                ></img>
+            })}
+        </div>
     );
 }
 

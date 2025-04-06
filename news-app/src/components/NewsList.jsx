@@ -1,11 +1,15 @@
 import NewsItem from './NewsItem';
 import styles from './NewsList.module.css';
 
-const NewsList = () => {
+const NewsList = ({articles}) => {
   return (
     <div className={styles.block}>
-      <NewsItem />
-      <NewsItem />
+      { articles.map((articles)=>{
+        return (
+        <NewsItem key={articles.id+articles.publishedAt} articles={articles}/>
+        // {<NewsItem />}
+        )
+      })};
     </div>
   );
 };
